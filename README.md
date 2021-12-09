@@ -9,7 +9,7 @@
 
 
 > var scrape= Task.Run( async () =>{
- WebRequest request = HttpWebRequest.Create(new Uri("URL"));
+  WebRequest request = HttpWebRequest.Create(new Uri("URL"));
  WebResponse response = await request.GetResponseAsync();
  StreamReader reader=new StreamReader(response.GetResponseStream());
  return await reader.ReadToEndAsync();
