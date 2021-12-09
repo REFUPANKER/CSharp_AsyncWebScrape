@@ -7,7 +7,7 @@
 > System.Net
 
 ~~                ~~
-var scrape= Task.Run( async () =>{
+var scrape= Task.Run( async () =>{ \n
 WebRequest request = HttpWebRequest.Create(new Uri("URL"));
 WebResponse response = await request.GetResponseAsync();
 StreamReader reader=new StreamReader(response.GetResponseStream());
