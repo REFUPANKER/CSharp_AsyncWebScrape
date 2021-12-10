@@ -16,6 +16,10 @@ StreamReader reader=new StreamReader(response.GetResponseStream());
 return await reader.ReadToEndAsync();
 }); 
 // scrape.Result;
+/*
+Page's html storaging in scrape.Result;
+Can require ".ToString()" 
+*/
 ```
 
 
