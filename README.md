@@ -8,12 +8,13 @@
 
 
 
-> var scrape= Task.Run( async () =>{ <br />
+``` var scrape= Task.Run( async () =>{ <br />
 WebRequest request = HttpWebRequest.Create(new Uri("URL")); <br />
 WebResponse response = await request.GetResponseAsync(); <br />
 StreamReader reader=new StreamReader(response.GetResponseStream()); <br />
 return await reader.ReadToEndAsync(); <br />
 }); <br/>
 // scrape.Result; <br/>
+```
 
 
