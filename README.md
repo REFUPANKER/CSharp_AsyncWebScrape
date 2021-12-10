@@ -8,7 +8,8 @@
 
 
 
-```cs var scrape= Task.Run( async () =>{
+```cs 
+var scrape= Task.Run( async () =>{
 WebRequest request = HttpWebRequest.Create(new Uri("URL"));
 WebResponse response = await request.GetResponseAsync();
 StreamReader reader=new StreamReader(response.GetResponseStream());
